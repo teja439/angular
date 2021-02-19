@@ -1,0 +1,7 @@
+<app-calculator></app-calculator>
+<form [formGroup]='calculatorForm' (submit)="add()">
+<input type="number" formControlName='num1'/>
+<input type="number" formControlName='num2'/>
+<button type="submit">add</button>
+</form>
+<h2>result:{{res}}</h2>
